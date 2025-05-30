@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olha.HW4.Shop", "Olha.HW4.Shop.csproj", "{9E370F54-0E03-EE73-AC87-F348302E84A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E370F54-0E03-EE73-AC87-F348302E84A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E370F54-0E03-EE73-AC87-F348302E84A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E370F54-0E03-EE73-AC87-F348302E84A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E370F54-0E03-EE73-AC87-F348302E84A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83B4F3F3-2A37-450A-BD39-99AA58C9DEC1}
+	EndGlobalSection
+EndGlobal
