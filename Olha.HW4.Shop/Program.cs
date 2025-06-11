@@ -12,7 +12,7 @@ store.AddProduct(new Product("Mango", 35.00m, 80));
 store.AddProduct(new Product("Peach", 40.00m, 90));
 store.AddProduct(new Product("Plum", 45.00m, 100));
 store.AddProduct(new Product("Pear", 50.00m, 110));
-store.AddProduct(new Product("Cherry", 55.00m, 120));
+store.AddProduct(new Product("Cherry", 60.00m, 120));
 store.ShowProducts();
 
 
