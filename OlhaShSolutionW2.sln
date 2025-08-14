@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olha.HW5.Phone", "Olha.HW5.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olha.HW6.Phone", "Olha.HW6.Phone\Olha.HW6.Phone.csproj", "{01E04F65-8ED7-44BC-8E12-68C0A7D0AAF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olha.HW9.Shop.Tests", "Olha.HW9.Shop.Tests\Olha.HW9.Shop.Tests.csproj", "{4ABAB29A-5C0A-40AC-B58D-F7694B520D68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{01E04F65-8ED7-44BC-8E12-68C0A7D0AAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E04F65-8ED7-44BC-8E12-68C0A7D0AAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E04F65-8ED7-44BC-8E12-68C0A7D0AAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABAB29A-5C0A-40AC-B58D-F7694B520D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABAB29A-5C0A-40AC-B58D-F7694B520D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABAB29A-5C0A-40AC-B58D-F7694B520D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABAB29A-5C0A-40AC-B58D-F7694B520D68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿
 public class ShopCart
 {
-    //Properties
+    //Properties upd
     public string CartID { get; }
     public string Owner { get; set; }
     public decimal Amount
@@ -43,15 +43,15 @@ public class ShopCart
         var cartProduct = FindProductInCart(productName);
         if (storeProduct == null)
         {
-            //throw new ArgumentNullException("Product is not found in the store");
-            Console.WriteLine("There is no such product in the store");
-            return;
+            throw new ArgumentNullException("storeProduct", "Product is not found in the store");
+            //Console.WriteLine("There is no such product in the store");
+            //return;
         }
         else if (storeProduct.Quantity < quantity)
         {
-            //throw new ArgumentOutOfRangeException("There is not enough quantity of the product in the store");
-            Console.WriteLine("There is not enough quantity of the product in the store");
-            return;
+            throw new ArgumentOutOfRangeException("There is not enough quantity of the product in the store");
+            //Console.WriteLine("There is not enough quantity of the product in the store");
+            //return;
         }
 
         if (cartProduct == null)
@@ -69,15 +69,15 @@ public class ShopCart
         var cartProduct = FindProductInCart(productName);
         if (cartProduct == null)
         {
-            //throw new ArgumentNullException("Product is not found in the cart");
-            Console.WriteLine("There is no such product in the cart");
-            return;
+            throw new ArgumentNullException("There is no such product in the cart");
+            //Console.WriteLine("There is no such product in the cart");
+            //return;
         }
         else if (cartProduct.Quantity < quantity)
         {
-            //throw new ArgumentOutOfRangeException("There is not enough quantity of the product in the cart");
-            Console.WriteLine("There is not enough quantity of the product in the cart");
-            return;
+            throw new ArgumentOutOfRangeException("There is not enough quantity of the product in the cart");
+            //Console.WriteLine("There is not enough quantity of the product in the cart");
+            //return;
         }
         else
         {
