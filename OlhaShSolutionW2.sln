@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olha.HW9.Shop.Tests", "Olha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olha.HW11.Selenium.Intro", "Olha.HW11.Selenium.Intro\Olha.HW11.Selenium.Intro.csproj", "{2453F7C1-CD6B-4531-9CFE-DEB09463DA6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olha.HW12.Selenium.Search", "Olha.HW12.Selenium.Search\Olha.HW12.Selenium.Search.csproj", "{AA270E03-CDD1-4A13-B210-CBC9C99154F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olha.HW12.Selenium.Search", "Olha.HW12.Selenium.Search\Olha.HW12.Selenium.Search.csproj", "{AA270E03-CDD1-4A13-B210-CBC9C99154F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olha.HW15.Login.PickUp", "Olha.HW15.Login.PickUp\Olha.HW15.Login.PickUp.csproj", "{A7EFC53C-1376-4037-9B8A-3471D81EA757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{AA270E03-CDD1-4A13-B210-CBC9C99154F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA270E03-CDD1-4A13-B210-CBC9C99154F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA270E03-CDD1-4A13-B210-CBC9C99154F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EFC53C-1376-4037-9B8A-3471D81EA757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EFC53C-1376-4037-9B8A-3471D81EA757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EFC53C-1376-4037-9B8A-3471D81EA757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EFC53C-1376-4037-9B8A-3471D81EA757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
