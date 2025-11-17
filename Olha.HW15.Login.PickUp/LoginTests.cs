@@ -9,8 +9,7 @@ namespace Olha.HW15.Login.PickUp
         [TestCase("Olha")]
         public void TestLogin(string expectedusername)
         {
-            SuccessLogin();
-            Thread.Sleep(4000);
+            //Loged in in OneTimeSetUp()
             string logedinuser = drv.FindElement(By.CssSelector("[data-testid=currentLogedUserDisplayAs]")).Text;
             StringAssert.Contains(expectedusername, logedinuser);
         }
@@ -33,8 +32,6 @@ namespace Olha.HW15.Login.PickUp
             drv.FindElement(By.Id("_companyText")).Clear();
             drv.FindElement(By.Id("_companyText")).SendKeys(Environment.GetEnvironmentVariable(company) ?? company);
             drv.FindElement(By.CssSelector("button[type=submit")).Click();
-
-            //Thread.Sleep(4000);
 
             var errortext = drv.FindElement(By.CssSelector(".validation-summary-errors ul li")).Text;
             StringAssert.Contains(expectedtext, errortext);

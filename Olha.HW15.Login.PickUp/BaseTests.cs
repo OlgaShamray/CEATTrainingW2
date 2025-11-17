@@ -13,17 +13,18 @@ namespace Olha.HW15.Login.PickUp
         protected const string ENT_QA_PASS = "ENT_QA_PASS";
         protected const string ENT_QA_COMPANY = "ENT_QA_COMPANY";
 
-        [SetUp]
-        public void Setup()
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
         {
             ChromeOptions opt = new ChromeOptions();
             opt.AddArguments("--lang=en-US");
             drv = new ChromeDriver(opt);
             //drv.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // implicit wait
             wait = new WebDriverWait(drv, TimeSpan.FromSeconds(30));           //eplicit wait
+            SuccessLogin();
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void TearDown()
         {
             drv.Quit();
@@ -35,7 +36,6 @@ namespace Olha.HW15.Login.PickUp
             drv.Navigate().GoToUrl(Environment.GetEnvironmentVariable(ENT_QA_URL));
             drv.FindElement(By.Id("username")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_USER));
             drv.FindElement(By.Id("password")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_PASS));
-            //drv.FindElement(By.Id("_companyText")).SendKeys("qa requestor winter");
             drv.FindElement(By.Id("_companyText")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_COMPANY));
             drv.FindElement(By.CssSelector("button[type=submit")).Click();
         }
