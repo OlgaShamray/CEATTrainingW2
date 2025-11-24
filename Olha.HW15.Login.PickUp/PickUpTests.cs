@@ -3,7 +3,7 @@ using SeleniumExtras.WaitHelpers;
 
 namespace Olha.HW15.Login.PickUp
 {
-    internal class PickUpTests : BaseTests
+    internal class PickUpTests : BaseLoginTest
     {
 
         [Test]
