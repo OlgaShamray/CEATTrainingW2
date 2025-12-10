@@ -17,19 +17,18 @@ namespace Olha.HW15.Login.PickUp
             //Navigate to Report List page
             drv.Navigate().GoToUrl(Environment.GetEnvironmentVariable(ENT_QA_URL) + "/report/reportlist.aspx");
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".reports-list-grid")));
-           
-            Thread.Sleep(100);
 
-            //Find first report
-            var reportLink = By.CssSelector("(td[data-testid=DisplayAs] a)[0]");
-            var reportName = drv.FindElement(reportLink).Text;
+            //Find the first report and save the name
+            var reportLink = By.CssSelector("td[data-testid=DisplayAs] a");
+
+            wait.Until(ExpectedConditions.ElementToBeClickable(reportLink));
+            var reportName = drv.FindElements(reportLink).First().Text;
 
             //Open Generate Report Dialog
-            wait.Until(ExpectedConditions.ElementToBeClickable(reportLink)).Click();
+            drv.FindElements(reportLink).First().Click();
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("[data-testid=GenerateReportDialog__dialog]")));
 
             //var reportName = drv.FindElements(reportLink).First().Text;
-
             var showHeaderSwitch = drv.FindElement(By.CssSelector("[data-testid=showHeader]"));
 
             if (showHeaderSwitch.GetAttribute("aria-checked") == "false")
