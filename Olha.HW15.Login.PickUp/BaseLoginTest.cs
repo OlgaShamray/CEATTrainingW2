@@ -12,9 +12,8 @@ namespace Olha.HW15.Login.PickUp
     public class BaseLoginTest : BaseTests
     {
         [OneTimeSetUp]
-        public override void OneTimeSetUp()
+        public void Login()
         {
-            base.OneTimeSetUp();
             SuccessLogin();
         }
         public void SuccessLogin()
@@ -23,7 +22,7 @@ namespace Olha.HW15.Login.PickUp
             drv.FindElement(By.Id("username")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_USER));
             drv.FindElement(By.Id("password")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_PASS));
             drv.FindElement(By.Id("_companyText")).SendKeys(Environment.GetEnvironmentVariable(ENT_QA_COMPANY));
-            drv.FindElement(By.CssSelector("button[type=submit")).Click();
+            drv.FindElement(By.CssSelector("button[type=submit]")).Click();
         }
 
         [TestCase("Olha")]

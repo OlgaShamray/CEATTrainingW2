@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+using System;
+using NUnit.Framework;
 
 namespace Olha.HW15.Login.PickUp
 {
@@ -26,8 +28,8 @@ namespace Olha.HW15.Login.PickUp
         [OneTimeTearDown]
         public void TearDown()
         {
-            drv.Quit();
-            drv.Dispose();
+            drv?.Quit();
+            drv?.Dispose();
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
+using System.Linq;
+using NUnit.Framework;
 
 namespace Olha.HW15.Login.PickUp
 {
