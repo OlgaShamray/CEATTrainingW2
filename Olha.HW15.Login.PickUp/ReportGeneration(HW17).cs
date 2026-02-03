@@ -12,7 +12,12 @@ namespace Olha.HW15.Login.PickUp
         public void TestReportGeneration()
         {
             //Logged in in OneTimeSetUp()
+
             var initialHandle = drv.CurrentWindowHandle;
+
+            //var alert = drv.SwitchTo().Alert();
+            //var alert = wait.Until(ExpectedConditions.AlertIsPresent());
+            //alert.Accept();
 
             //Navigate to Report List page
             drv.Navigate().GoToUrl(Environment.GetEnvironmentVariable(ENT_QA_URL) + "/report/reportlist.aspx");

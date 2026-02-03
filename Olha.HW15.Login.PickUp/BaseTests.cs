@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -20,9 +20,15 @@ namespace Olha.HW15.Login.PickUp
         {
             ChromeOptions opt = new ChromeOptions();
             opt.AddArguments("--lang=en-US");
+            
+            // Disable password manager and related prompts
+            opt.AddUserProfilePreference("credentials_enable_service", false);
+            opt.AddUserProfilePreference("profile.password_manager_enabled", false);
+            opt.AddUserProfilePreference("profile.password_manager_leak_detection", false);
+            
             drv = new ChromeDriver(opt);
             //drv.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10); // implicit wait
-            wait = new WebDriverWait(drv, TimeSpan.FromSeconds(30));           //eplicit wait
+            wait = new WebDriverWait(drv, TimeSpan.FromSeconds(30));           //emplicit wait
         }
 
         [OneTimeTearDown]
